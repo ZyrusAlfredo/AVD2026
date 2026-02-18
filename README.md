@@ -9,7 +9,7 @@
 | Pertemuan | Topik                                                                               | Status |
 | :-------: | ----------------------------------------------------------------------------------- | :----: |
 |     1     | Pengenalan Dasar AVD & Business Understanding                                       |   ✅   |
-|     2     | Load dataset menggunakan Pandas, Data Understanding & EDA                           |   ✅   |
+|     2     | [Load dataset menggunakan Pandas, Data Understanding & EDA](Pertemuan_2.md)         |   ✅   |
 |     3     | Data Preparation & Bandingkan grafik sebelum-sesudah                                |   🔜   |
 |     4     | Visualisasi & Matplotlib-Seaborn                                                    |   🔜   |
 |     5     | Membuat Visualisasi & Dashboard Tableau                                             |   🔜   |
