@@ -1,6 +1,6 @@
 # Analitik dan Visualisasi Data 2026
 
-> Repository materi praktikum **Analiktik dan Visualisasi Data 2026** — Program Studi Sistem Informasi, Universitas Mulawarman.
+> Repository kode praktikum **Analiktik dan Visualisasi Data 2026** — Program Studi Sistem Informasi, Universitas Mulawarman.
 
 --
 
