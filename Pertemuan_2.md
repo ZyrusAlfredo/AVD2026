@@ -42,9 +42,11 @@ df.dtypes → Menampilkan tipe data dari setiap kolom
 ### STATISTIK DESKRIPTIF
 ```
 df.describe() → Menampilkan statistik ringkasan seperti mean, median, minimum, maksimum, dan kuartil
-df.value_counts() → Menghitung jumlah kemunculan nilai unik dalam suatu kolom
+df.value_counts() // df["Country"].value_counts() → Menghitung jumlah kemunculan nilai unik dalam suatu kolom
 df.mean(), df.median(), df.std() → Menghitung rata-rata, median, dan standar deviasi
 df.corr() → Menghitung korelasi antar kolom numerik
+numeric_df = df.select_dtypes(include=['int64', 'float64'])
+display(numeric_df.head())
 ```
 
 ## BAGIAN 2: EDA
