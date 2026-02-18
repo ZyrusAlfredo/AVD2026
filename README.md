@@ -2,6 +2,12 @@
 
 > Repository kode praktikum **Analiktik dan Visualisasi Data 2026** — Program Studi Sistem Informasi, Universitas Mulawarman.
 
+## Created By: 
+
+**Zyrus Alfredo Randan Malinggato**
+
+Program Studi Sistem Informasi — Fakultas Teknik — Universitas Mulawarman
+
 --
 
 ## DAFTAR MATERI
@@ -14,10 +20,3 @@
 |     4     | Visualisasi & Matplotlib-Seaborn                                                    |   🔜   |
 |     5     | Membuat Visualisasi & Dashboard Tableau                                             |   🔜   |
 |     6     | Machine Learning                                                                    |   🔜   |
-
-
-## Created By: 
-
-**Zyrus Alfredo Randan Malinggato**
-
-Program Studi Sistem Informasi — Fakultas Teknik — Universitas Mulawarman
