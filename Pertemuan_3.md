@@ -82,6 +82,12 @@ df = df.drop('Nama Kolom', axis=1)
 ```
 df['Nama Kolom'] = df['Nama Kolom'].fillna(df['Nama Kolom'].dropna().mean())
 ```
+```
+df['Nama Kolom'] = df['Nama Kolom'].fillna(df['Nama Kolom'].dropna().median())
+```
+```
+df['Nama Kolom'] = df['Nama Kolom'].fillna(df['Nama Kolom'].dropna().modus())
+```
 
 ## Bagian 4: Duplicated Values
 
