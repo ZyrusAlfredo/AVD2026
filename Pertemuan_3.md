@@ -99,7 +99,7 @@ df['Nama Kolom'] = df['Nama Kolom'].fillna(df['Nama Kolom'].dropna().mean())
 df['Nama Kolom'] = df['Nama Kolom'].fillna(df['Nama Kolom'].dropna().median())
 ```
 ```
-df['Nama Kolom'] = df['Nama Kolom'].fillna(df['Nama Kolom'].dropna().modus())
+df['Nama Kolom'] = df['Nama Kolom'].fillna(df['Nama Kolom'].dropna().mode()[0]) // Modus
 ```
 
 ## Bagian 4: Duplicated Values
