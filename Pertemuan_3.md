@@ -46,6 +46,19 @@ df["Nama Kolom"] = pd.to_datetime(df["Nama Kolom"], format="mixed")
 df["Nama Kolom"].head(5)
 ```
 
+### Mapping (menangani kalimat/mengganti kalimat)
+```
+df['nama kolom'] = df['nama kolom'].replace({
+    'Kalimat Salah': 'Kalimat Benar', 
+    'Kalimat Salah': 'Kalimat Benar',
+    'Kalimat Salah': 'Kalimat Benar',
+    'Kalimat Salah': 'Kalimat Benar'
+})
+
+for col in ['nama kolom']:
+    print(df[col].unique())
+```
+
 ### Untuk Membuat Teks Upper (KAPITAL Semua) - HALO DUNIA
 ```
 df['Nama Kolom'] = df['Nama Kolom'].str.upper()
