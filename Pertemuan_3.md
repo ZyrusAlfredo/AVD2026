@@ -161,6 +161,13 @@ df['NAMA KOLOM BARU'] = df['NAMA KOLOM RELEVAN'].apply(VARIABEL)
 ```
 
 ## Bagian 7: Data Reduction
+
+**a. Untuk hapus kolom**
 ```
 df = df.drop('Nama Kolom, axis=1)
+```
+
+**b. untuk menghapus bari**
+```
+df = df[df['nama kolom'] != 'Kalimat yang mau dihapus']
 ```
