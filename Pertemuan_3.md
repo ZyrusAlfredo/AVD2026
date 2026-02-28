@@ -86,6 +86,28 @@ print(df['Nama Kolom'].unique())
 ## BAGIAN 3: Missing Values
 (Anda dapat membaca penjelasan lebih detail pada PPT/Modul yang sudah disiapkan praktisi di Classroom)
 
+### Untuk mengatasi missing values pada kolom tanggal
+
+**a. Dihapus**
+```
+df = df.dropna(subset=['nama kolom'])
+```
+
+**b. Dengan Forwardwill (pakai tanggal sebelumnya)**
+```
+df['nama kolom'] = df['nama kolom'].fillna(method='ffill')
+```
+
+**c. Dengan Backward Fill (pakai tanggal setelahnya)**
+```
+df['nama kolom'] = df['nama kolom'].fillna(method='bfill')
+```
+
+**d. Mengisi berdasarkan kolom lain (jika ada kolom tanggal lagi di dataset mu, jadi kolom itu akan jadi acuan)**
+```
+df['nama kolom yang bermasalah'] = df['nama kolom yang bermasalah'].fillna(df['nama kolom yang akan dijadikan acuan'])
+```
+
 ### Untuk Drop/Menghapus
 ```
 df = df.drop('Nama Kolom', axis=1)
