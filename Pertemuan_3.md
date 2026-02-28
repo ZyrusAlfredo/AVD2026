@@ -90,7 +90,10 @@ print(df['Nama Kolom'].unique())
 
 **a. Dihapus**
 ```
-df = df.dropna(subset=['nama kolom'])
+df = df.dropna(subset=['nama kolom']) // Hapus Kolom
+```
+```
+df = df[df['nama kolom'] != 'Kalimat yang mau dihapus'] // Hapus Baris
 ```
 
 **b. Dengan Forwardwill (pakai tanggal sebelumnya)**
