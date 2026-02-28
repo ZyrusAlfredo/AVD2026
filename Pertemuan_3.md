@@ -124,14 +124,14 @@ df['Nama Kolom'] = df['Nama Kolom'].fillna(df['Nama Kolom'].dropna().median())
 df['Nama Kolom'] = df['Nama Kolom'].fillna(df['Nama Kolom'].dropna().mode()[0]) // Modus
 ```
 
-## Bagian 4: Duplicated Values
+## BAGIAN 4: Duplicated Values
 
 ### Untuk Drop/Menghapus
 ```
 df = df.drop_duplicates()
 ```
 
-## Bagian 5: Outliers
+## BAGIAN 5: Outliers
 ```
 columns_to_impute = ["Nama Kolom 1", "Nama Kolom 2"]
 
@@ -146,7 +146,7 @@ for col in columns_to_impute:
     df.loc[:, col] = df[col].clip(lower=lower_bound, upper=upper_bound)
 ```
 
-## Bagian 6: Construct Data
+## BAGIAN 6: Construct Data
 (Disesuaikan dengan kebutuhan kalian) Disini saya mau mencontohkan untuk membuat kolom baru.
 ```
 def VARIABEL(NAMA KOLOM RELEVAN):
@@ -160,7 +160,7 @@ def VARIABEL(NAMA KOLOM RELEVAN):
 df['NAMA KOLOM BARU'] = df['NAMA KOLOM RELEVAN'].apply(VARIABEL)
 ```
 
-## Bagian 7: Data Reduction
+## BAGIAN 7: Data Reduction
 
 **a. Untuk hapus kolom**
 ```
