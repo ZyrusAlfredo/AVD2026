@@ -127,7 +127,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-# BOX PLOT (MATPLOTLIB)
+# SCATTER PLOT (MATPLOTLIB)
 ```
 plt.figure(figsize=(10, 6)) # Ukuran
 plt.scatter(df['KOLOM 1'], df['KOLOM 2'], alpha=0.7, color='teal') # Color (Warna)
@@ -139,7 +139,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-# BOX PLOT (SEABORN)
+# SCATTER PLOT (SEABORN)
 ```
 plt.figure(figsize=(10, 6)) # Ukuran
 sns.scatterplot(x='KOLOM 1', y='KOLOM 2', hue='KET.KOTAK KECIL', data=df)
@@ -147,6 +147,19 @@ plt.title('JUDUL') # Judul
 plt.xlabel('X') # X Keterangan
 plt.ylabel('Y') # Y Keterangan
 plt.legend(title='KET.KOTAK KECIL') # Keterangan dalam kotak kecil
+plt.show()
+```
+
+# BUBBLE CHART (SEABORN)
+```
+plt.figure(figsize=(12, 8))
+sns.scatterplot(x='KOLOM 1', y='KOLOM 2', size='KOLOM 3', hue='KOLOM 4', data=df, sizes=(50, 1000), alpha=0.7, palette='viridis')
+plt.title('Penjualan vs Keuntungan (Ukuran: Kuantitas, Warna: Kategori)', fontsize=16)
+plt.xlabel('Penjualan', fontsize=12)
+plt.ylabel('Keuntungan', fontsize=12)
+plt.grid(True)
+plt.legend(title='KOLOM 4', bbox_to_anchor=(1.05, 1), loc='upper left')
+plt.tight_layout()
 plt.show()
 ```
 
