@@ -17,6 +17,6 @@ Program Studi Sistem Informasi — Fakultas Teknik — Universitas Mulawarman
 |     1     | Pengenalan Dasar AVD & Business Understanding                                       |   ✅   |
 |     2     | [Load dataset menggunakan Pandas, Data Understanding & EDA](Pertemuan_2.md)         |   ✅   |
 |     3     | [Data Preparation, Construct Data, Data Redaction](Pertemuan_3.md)                  |   ✅   |
-|     4     | Visualisasi & Matplotlib-Seaborn                                                    |   🔜   |
+|     4     | [Visualisasi & Matplotlib-Seaborn](Pertemuan_4.md)                                  |   ✅   |
 |     5     | Membuat Visualisasi & Dashboard Tableau                                             |   🔜   |
 |     6     | Machine Learning                                                                    |   🔜   |
