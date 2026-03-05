@@ -76,7 +76,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-# LINE CHART (MATPLOTLIB) BERDASARKAN TANGGAL
+# LINE CHART (MATPLOTLIB) BERDASARKAN TAHUN
 ```
 # Pastikan kolom bertipe datetime
 df['KOLOM 1'] = pd.to_datetime(df['KOLOM 1'])
