@@ -78,19 +78,21 @@ plt.show()
 
 # LINE CHART (MATPLOTLIB) BERDASARKAN TAHUN
 ```
+# Line Chart (Matplotlib) Berdasarkan Tahun
+
 # Pastikan kolom bertipe datetime
-df['KOLOM 1'] = pd.to_datetime(df['KOLOM 1'])
+df['KOLOM'] = pd.to_datetime(df['KOLOM'])
 
-# Group by day
-VARIABEL1 = df.groupby('KOLOM 1').size()
+# Group by year
+VARIABEL1 = df.groupby(df['KOLOM'].dt.year).size()
 
-plt.figure(figsize=(20, 6)) # Ukuran figure diperbesar untuk kejelasan
-plt.plot(VARIABEL1.index, VARIABEL1.values, marker='o', color='red') # Mengubah warna agar berbeda
+plt.figure(figsize=(20, 6)) # Ukuran
+plt.plot(VARIABEL1.index, VARIABEL1.values, marker='o', color='red') # Color = Warna
 plt.title('JUDUL', fontsize=16) # Judul
 plt.xlabel('X', fontsize=12) # X Keterangan
-plt.ylabel('Y', fontsize=12) # Y Keterangan
+plt.ylabel('Y', fontsize=12) # Y Keterangan'
 plt.grid(True)
-plt.gcf().autofmt_xdate() # Otomatis mengatur format dan rotasi di sumbu X
+plt.gcf().autofmt_xdate()
 plt.tight_layout()
 plt.show()
 ```
