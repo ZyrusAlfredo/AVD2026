@@ -95,6 +95,30 @@ plt.tight_layout()
 plt.show()
 ```
 
+# LINE CHART (MATPLOTLIB) BERDASARKAN TANGGAL
+```
+# Line Chart (Matplotlib)
+
+# Pastikan kolom bertipe datetime
+
+# Group by tanggal distribusi
+VARIABEL1 = df.groupby(df['KOLOM 1'].dt.to_period('D')).size()
+
+plt.figure(figsize=(30, 8)) # Ukuran
+plt.plot(VARIABEL1.index.astype(str), VARIABEL1.values, marker='o', color='blue') # Color = warna
+
+plt.title('JUDUL', fontsize=16) # Judul
+plt.xlabel('X', fontsize=12) # X Keterangan
+plt.ylabel('Y', fontsize=12) # Y Keterangan
+
+plt.grid(True)
+plt.gcf().autofmt_xdate()
+plt.tight_layout()
+
+plt.show()
+```
+
+
 # HISTOGRAM (MATPLOTLIB)
 ```
 plt.figure(figsize=(8, 5))
