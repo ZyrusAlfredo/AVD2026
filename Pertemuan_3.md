@@ -113,6 +113,12 @@ df['nama kolom yang bermasalah'] = df['nama kolom yang bermasalah'].fillna(df['n
 df = df.drop('Nama Kolom', axis=1) // Hapus Kolom
 ```
 
+### Untuk Menghapus Kolom yang kembar (Siapatau Di dataset kalian ada yang kembar kolom nya)
+```
+df = df.drop(df.columns[10], axis=1)
+```
+
+### Untuk Menghapus Baris/Kalimat dalam kolom
 ```
 df = df[df['nama kolom'] != 'Kalimat yang mau dihapus'] // Hapus Baris
 ```
